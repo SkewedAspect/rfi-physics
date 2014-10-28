@@ -4,15 +4,16 @@
 // @module index.js
 //----------------------------------------------------------------------------------------------------------------------
 
-function setScheduler()
-{
+var cannon = require('cannon');
 
-} // end setScheduler
+var engine = require('./lib/engine');
 
 //----------------------------------------------------------------------------------------------------------------------
 
 module.exports = {
-    setScheduler: setScheduler
+    startPhysics: engine.loop,
+    engine: engine,
+    cannon: cannon
 }; // end exports
 
 //----------------------------------------------------------------------------------------------------------------------
