@@ -6,13 +6,14 @@
 
 var cannon = require('cannon');
 
-var engine = require('./lib/engine');
+var PhysicsEngine = require('./lib/engine');
+var TargetVelocityController = require('./lib/targetvel');
 
 //----------------------------------------------------------------------------------------------------------------------
 
 module.exports = {
-    startPhysics: engine.loop,
-    engine: engine,
+    PhysicsEngine: PhysicsEngine,
+    TargetVelocityController: TargetVelocityController,
     cannon: cannon
 }; // end exports
 
