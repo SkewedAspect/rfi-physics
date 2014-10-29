@@ -23,6 +23,7 @@
   "homepage": "https://github.com/SkewedAspect/rfi-physics",
   "dependencies": {
     "cannon": "^0.6.0",
+    "lodash": "^2.4.1",
     "performance-now": "^0.2.0"
   },
   "browser": {
