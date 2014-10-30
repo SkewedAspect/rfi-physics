@@ -5,6 +5,7 @@
 //----------------------------------------------------------------------------------------------------------------------
 
 var cannon = require('cannon');
+var now = require('performance-now');
 
 var PhysicsEngine = require('./lib/engine');
 var TargetVelocityController = require('./lib/targetvel');
@@ -14,7 +15,8 @@ var TargetVelocityController = require('./lib/targetvel');
 module.exports = {
     PhysicsEngine: PhysicsEngine,
     TargetVelocityController: TargetVelocityController,
-    cannon: cannon
+    cannon: cannon,
+    now: now
 }; // end exports
 
 //----------------------------------------------------------------------------------------------------------------------
