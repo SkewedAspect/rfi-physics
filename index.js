@@ -15,6 +15,10 @@ var TargetVelocityController = require('./lib/targetvel');
 module.exports = {
     PhysicsEngine: PhysicsEngine,
     TargetVelocityController: TargetVelocityController,
+    math: {
+        Vector: cannon.Vec3,
+        Quaternion: cannon.Quaternion
+    },
     cannon: cannon,
     now: now
 }; // end exports
