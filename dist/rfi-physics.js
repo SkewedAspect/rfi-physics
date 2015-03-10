@@ -45,6 +45,12 @@ module.exports = {
     now: now
 }; // end exports
 
+// Expose globally if in a browser
+if(typeof window != 'undefined')
+{
+    window.RFIPhysics = module.exports;
+} // end if
+
 //----------------------------------------------------------------------------------------------------------------------
 
 },{"./lib/engine":3,"./lib/targetvel":4,"cannon":5,"performance-now":1}],3:[function(require,module,exports){

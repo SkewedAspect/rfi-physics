@@ -23,4 +23,10 @@ module.exports = {
     now: now
 }; // end exports
 
+// Expose globally if in a browser
+if(typeof window != 'undefined')
+{
+    window.RFIPhysics = module.exports;
+} // end if
+
 //----------------------------------------------------------------------------------------------------------------------
