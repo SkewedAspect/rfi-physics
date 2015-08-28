@@ -5,7 +5,7 @@
 //----------------------------------------------------------------------------------------------------------------------
 
 var cannon = require('cannon');
-var now = require('performance-now');
+var now = require('./compat/performance');
 
 var PhysicsEngine = require('./lib/engine');
 var TargetVelocityController = require('./lib/targetvel');
