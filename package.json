@@ -1,6 +1,6 @@
 {
   "name": "rfi-physics",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "The physics wrapper for the RFI MMORPG",
   "main": "index.js",
   "scripts": {
