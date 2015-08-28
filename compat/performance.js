@@ -19,7 +19,7 @@ if(process && process.hrtime)
 }
 else if(performance && performance.now)
 {
-    module.exports = performance.now;
+    module.exports = performance.now.bind(performance);
 }
 else
 {
